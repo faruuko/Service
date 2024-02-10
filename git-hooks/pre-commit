@@ -1,0 +1,6 @@
+#!/bin/bash
+
+npx prettier --no-error-on-unmatched-pattern \"**/*.ts\" --write --ignore-path .gitignore &&
+npx eslint . --fix --ext .ts --ignore-path .gitignore &&
+npx eslint . --ext .ts --ignore-path .gitignore &&
+npx jest --passWithNoTests
