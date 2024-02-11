@@ -91,6 +91,9 @@
     "transform": {
       "^.+\\.ts?$": "ts-jest"
     },
+    "moduleNameMapper": {
+      "(.+)\\.js": "$1"
+    },
     "collectCoverageFrom": [
       "**/*.ts"
     ],
