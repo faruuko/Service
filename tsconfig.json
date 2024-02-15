@@ -1,6 +1,15 @@
 {
-  "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
+    "module": "ES2022",
+    "target": "ES2021",
+    "lib": ["ES2021"],
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
     "types": ["node", "jest"]
   },
   "exclude": ["services"]
