@@ -1,6 +1,6 @@
 import { SSTConfig } from 'sst';
-import { Services } from './stacks/services.js';
-import { isLocal } from './is-local.js';
+import { Services } from '#/stacks/services';
+import { isLocal } from '#/is-local';
 
 export default {
   config(input) {

@@ -1,14 +1,15 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   aws-lambda:
     specifier: ^1.0.7
     version: 1.0.7
 
 devDependencies:
-  '@tsconfig/node16':
-    specifier: ^16.1.1
-    version: 16.1.1
   '@types/aws-lambda':
     specifier: ^8.10.133
     version: 8.10.133
@@ -3070,10 +3071,6 @@ packages:
     resolution: {integrity: sha512-IENsJs41ZR4oeFUJhsNNTSgEOtuRN0m9u7ec4u3eG/qOc7bIoo1nDoYtx4bl6OJJSQYEytG9tlcVz9G8OAaHbg==}
     dependencies:
       tslib: 2.6.2
-    dev: true
-
-  /@tsconfig/node16@16.1.1:
-    resolution: {integrity: sha512-+pio93ejHN4nINX4pXqfnR/fPLRtJBaT4ORaa5RH0Oc1zoYmo2B2koG+M328CQhHKn1Wj6FcOxCDFXAot9NhvA==}
     dev: true
 
   /@types/aws-lambda@8.10.133:
@@ -7656,7 +7653,3 @@ packages:
   /zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
