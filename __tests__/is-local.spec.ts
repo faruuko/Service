@@ -1,4 +1,4 @@
-import { isLocal } from '../is-local.js';
+import { isLocal } from '#/is-local';
 
 describe.each`
   stage              | expectedValue
