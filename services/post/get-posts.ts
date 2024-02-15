@@ -1,5 +1,5 @@
-import { APIGatewayProxyHandlerV2 } from 'aws-lambda';
+import { ApiHandler } from 'sst/node/api';
 
-export const handler: APIGatewayProxyHandlerV2 = async () => {
-  return 'Hi Hi Posts';
-};
+export const handler = ApiHandler(async () => {
+  return { statusCode: 200, body: 'This request is made from get-posts.ts' };
+});
