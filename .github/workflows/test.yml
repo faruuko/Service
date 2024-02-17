@@ -30,7 +30,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Authenticate
-        run: echo "registry=https://registry.npmjs.org/ @faruuko:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=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" > ~/.npmrc
+        run: |
+          echo @faruuko:registry=https://npm.pkg.github.com >> ~/.npmrc
+          echo //npm.pkg.github.com/:_authToken=${{ secrets.PACKAGE_OPERATIONS_ACCESS_TOKEN }} >> ~/.npmrc
       - name: Install dependencies
         run: npm install
       - name: Test

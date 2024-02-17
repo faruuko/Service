@@ -3,8 +3,7 @@ import connect from '@faruuko/outrage-orm/connect';
 import getPostById from '@faruuko/outrage-orm/prepared-statements/post/get-post-by-id';
 
 const { connection } = connect({
-  connectionString:
-    'postgresql://thepharoouq:WxpPOKL3Az6h@ep-curly-sun-a5nlcd9t-pooler.us-east-2.aws.neon.tech/outrage?sslmode=require'
+  connectionString: process.env['DATABASE_CONNECTION_URL']
 });
 
 export const handler = ApiHandler(async () => {

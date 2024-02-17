@@ -23,6 +23,10 @@ export default {
       }
     });
 
+    app.addDefaultFunctionEnv({
+      DATABASE_CONNECTION_URL: process.env['DATABASE_CONNECTION_URL']!
+    });
+
     app.stack(Services);
   }
 } satisfies SSTConfig;
