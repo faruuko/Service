@@ -1,7 +1,7 @@
 before_compile:
   - echo @faruuko:registry=https://npm.pkg.github.com >> ~/.npmrc
-  - echo //npm.pkg.github.com/:_authToken=$GITHUB_ACCESS_TOKEN >> ~/.npmrc
-  - git -v
-  - npm install -g ts-node
-  - npm install -g @faruuko/outrage-orm
+  - echo //npm.pkg.github.com/:_authToken=$GITHUB_PACKAGE_ACCESS_TOKEN >> ~/.npmrc
+  - git clone https://$GITHUB_CLONING_ACCESS_TOKEN@github.com/faruuko/outrage-service.git
+  - cd outrage-service
+  - npm install
   - npx migrate --connectionString=$DATABASE_CONNECTION_URL
