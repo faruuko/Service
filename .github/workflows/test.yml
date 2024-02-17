@@ -32,6 +32,6 @@ jobs:
       - name: Authenticate
         run: echo "@faruuko:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=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" > ~/.npmrc
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
       - name: Test
         run: pnpm test -- --coverage=true --coverageReporters=text
