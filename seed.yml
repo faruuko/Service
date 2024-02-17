@@ -1,14 +1,3 @@
 before_compile:
-  - pwd
   - echo @faruuko:registry=https://npm.pkg.github.com >> ~/.npmrc
   - echo //npm.pkg.github.com/:_authToken=$GITHUB_PACKAGE_ACCESS_TOKEN >> ~/.npmrc
-  - cd ~
-  - pwd
-  - git clone https://$GITHUB_CLONING_ACCESS_TOKEN@github.com/faruuko/outrage-orm.git
-  - ls
-  - cd outrage-orm
-  - pwd
-  - ls
-  - npm install
-  - npm install -g ts-node
-  - npx migrate --connectionString=$DATABASE_CONNECTION_URL
