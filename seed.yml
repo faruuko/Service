@@ -6,9 +6,4 @@ before_compile:
   - pwd
   - git clone https://$GITHUB_CLONING_ACCESS_TOKEN@github.com/faruuko/outrage-orm.git
   - ls
-  - cd outrage-orm && pwd
-  - pwd
-  - ls
-  - pnpm install
-  - pnpm install -g ts-node
-  - npx migrate --connectionString=$DATABASE_CONNECTION_URL
+  - cd outrage-orm && pnpm install && npx migrate --connectionString=$DATABASE_CONNECTION_URL
