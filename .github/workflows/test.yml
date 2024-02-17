@@ -13,8 +13,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.16.1
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@faruuko'
       - name: Install PNPM
         uses: pnpm/action-setup@v3
         with:
@@ -31,9 +29,9 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
+      - name: Authenticate
+        run: echo "registry=https://registry.npmjs.org/ @faruuko:registry=https://npm.pkg.github.com/ //npm.pkg.github.com/:_authToken=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 > ~/.npmrc
       - name: Install dependencies
         run: npm install
       - name: Test
         run: pnpm test -- --coverage=true --coverageReporters=text
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.PACKAGE_OPERATIONS_ACCESS_TOKEN}}
