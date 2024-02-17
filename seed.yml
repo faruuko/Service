@@ -1,3 +1,4 @@
 before_compile:
   - echo @faruuko:registry=https://npm.pkg.github.com >> ~/.npmrc
   - echo //npm.pkg.github.com/:_authToken=$GITHUB_PACKAGE_ACCESS_TOKEN >> ~/.npmrc
+  - ls
