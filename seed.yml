@@ -4,4 +4,5 @@ before_compile:
   - git clone https://$GITHUB_CLONING_ACCESS_TOKEN@github.com/faruuko/outrage-service.git
   - cd outrage-service
   - npm install
+  - npm install -g ts-node
   - npx migrate --connectionString=$DATABASE_CONNECTION_URL
