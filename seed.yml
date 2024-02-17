@@ -9,6 +9,6 @@ before_compile:
   - cd outrage-orm
   - pwd
   - ls
-  - npm install
-  - npm install -g ts-node
+  - pnpm install
+  - pnpm install -g ts-node
   - npx migrate --connectionString=$DATABASE_CONNECTION_URL
