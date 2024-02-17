@@ -2,4 +2,4 @@ before_compile:
   - echo @faruuko:registry=https://npm.pkg.github.com >> ~/.npmrc
   - echo //npm.pkg.github.com/:_authToken=$GITHUB_PACKAGE_ACCESS_TOKEN >> ~/.npmrc
   - cd .. && git clone https://$GITHUB_CLONING_ACCESS_TOKEN@github.com/faruuko/outrage-orm.git && cd outrage-orm && pnpm install
-  - cd .. && cd outrage-orm && npx migrateere --connectionString=$DATABASE_CONNECTION_URL
+  - cd .. && cd outrage-orm && npx migrate --connectionString=$DATABASE_CONNECTION_URL
