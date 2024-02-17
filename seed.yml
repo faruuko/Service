@@ -2,8 +2,7 @@ before_compile:
   - echo @faruuko:registry=https://npm.pkg.github.com >> ~/.npmrc
   - echo //npm.pkg.github.com/:_authToken=$GITHUB_PACKAGE_ACCESS_TOKEN >> ~/.npmrc
   - ls -a -s
-  - which .npmrc
-
+  - cd ../
   - pwd
   - git clone https://$GITHUB_CLONING_ACCESS_TOKEN@github.com/faruuko/outrage-orm.git
   - ls
