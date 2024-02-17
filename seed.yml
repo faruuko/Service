@@ -1,6 +1,7 @@
 before_compile:
   - echo @faruuko:registry=https://npm.pkg.github.com >> ~/.npmrc
   - echo //npm.pkg.github.com/:_authToken=$GITHUB_ACCESS_TOKEN >> ~/.npmrc
+  - git -v
   - npm install -g ts-node
   - npm install -g @faruuko/outrage-orm
   - npx migrate --connectionString=$DATABASE_CONNECTION_URL
