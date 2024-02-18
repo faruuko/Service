@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@faruuko/outrage-orm':
     specifier: latest
-    version: 0.0.2(@aws-sdk/client-rds-data@3.511.0)(@types/pg@8.11.0)(kysely@0.25.0)(react@18.2.0)
+    version: 0.0.4(@aws-sdk/client-rds-data@3.511.0)(@types/pg@8.11.0)(kysely@0.25.0)(react@18.2.0)
 
 devDependencies:
   '@types/jest':
@@ -1931,8 +1931,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@faruuko/outrage-orm@0.0.2(@aws-sdk/client-rds-data@3.511.0)(@types/pg@8.11.0)(kysely@0.25.0)(react@18.2.0):
-    resolution: {integrity: sha512-8nN50hJzSjIMDlUpQJFvo4pZONEX6XVUOsbik1Dxt+NMdEkO+KkOz33st8vRmAZgW1yBF/ID7+OelKqHgnlkAA==, tarball: https://npm.pkg.github.com/download/@faruuko/outrage-orm/0.0.2/f26366177b878750827a495d38a80bfee4e82e78}
+  /@faruuko/outrage-orm@0.0.4(@aws-sdk/client-rds-data@3.511.0)(@types/pg@8.11.0)(kysely@0.25.0)(react@18.2.0):
+    resolution: {integrity: sha512-X/cFbBXFasDnGkJ4TTTxQS/W18hwCEy8nx05kNwvyiQsT5lRfr+8hJ+3miRui3Nb/B8+2NDqSPqAqA3CWfOhvg==, tarball: https://npm.pkg.github.com/download/@faruuko/outrage-orm/0.0.4/5f0bd3a3268951c919b25a869eaf3dd3b2df7fb8}
     hasBin: true
     dependencies:
       drizzle-orm: 0.29.3(@aws-sdk/client-rds-data@3.511.0)(@types/pg@8.11.0)(kysely@0.25.0)(pg@8.11.3)(react@18.2.0)
