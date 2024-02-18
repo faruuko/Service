@@ -6,7 +6,7 @@ export const Services = ({ stack }: StackContext) => {
       'POST /posts': 'services/post/create-post.handler',
       'PUT /posts/{id}': 'services/post/update-post.handler',
       'GET /posts/{id}': 'services/post/get-post-by-id.handler',
-      'GET /authors': 'services/author/get-authors.handler'
+      'POST /authors': 'services/author/create-author.handler'
     }
   });
 
